@@ -106,7 +106,7 @@ social:
 # and uncomment the lines below.
 - icon: cv
   icon_pack: ai
-  link: static/uploads/bhavyaresume.pdf
+  link: blob/media/static/uploads/bhavyaresume.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
@@ -116,5 +116,5 @@ I am a CS PhD student at the University of Southern California, advised by Prof.
 
 Previously, I was a (remote) Visiting Researcher at CVPR Unit, ISI Kolkata, advised by Prof. [Umapada Pal](https://www.isical.ac.in/~umapada/) and Prof. [Saumik Bhattacharya](https://saumikb.github.io/), working on deep metric learning. 
 
-Before that, I graduated from [IIT Roorkee](https://www.iitr.ac.in/) with a bachelor's in Electronics and Communication Engineering. For my joint bachelor thesis, I worked on generative adversarial network-based methods for compressive sensing MRI reconstruction, under the guidance of Prof. [Saumik Bhattacharya](https://saumikb.github.io/) and Prof. [PM Pradhan](https://www.iitr.ac.in/~ECE/Pyari_Mohan_Pradhan). I also interned at Northwestern University as an SN Bose Scholar in the summer of 2019. 
+Before that, I graduated from [IIT Roorkee](https://www.iitr.ac.in/) with a bachelor's in Electronics and Communication Engineering. For my joint bachelor thesis, I worked on generative adversarial network-based methods for compressive sensing MRI reconstruction, under the guidance of Prof. [Saumik Bhattacharya](https://saumikb.github.io/) and Prof. [PM Pradhan](http://ece.iitr.ac.in/pm_pradhan). I also interned at Northwestern University as an SN Bose Scholar in the summer of 2019. 
 {style="text-align: justify;"}
