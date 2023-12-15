@@ -1,50 +1,47 @@
 ---
 # Display name
-title: 吳健雄
+title: Bhavya Vasudeva
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: 
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Bhavya
+last_name: Vasudeva
 
 # Status emoji
 status:
-  icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: Graduate Student
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Stanford University
-    url: https://www.stanford.edu/
+- name: University of Southern California
+  url: https://www.cs.usc.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: 
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+- Deep Learning Theory
+- Optimization
+- Robustness to Distributional Shifts
+
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+  - course: PhD in Computer Science
+    institution: University of Southern California
+    year: 2026
+  - course: BTech in Electronics and Communication Engineering
+    institution: Indian Institute of Technology Roorkee
+    year: 2020
 
 # Skills
 # For available icons, see: https://docs.hugoblox.com/getting-started/page-builder/#icons
@@ -91,34 +88,33 @@ skills:
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
 #   form "mailto:your-email@example.com" or "/#contact" for contact widget.
 social:
-  - icon: envelope
-    icon_pack: fas
-    link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
-    label: Follow me on Twitter
-    display:
-      header: true
-  - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
-    icon_pack: fas
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
-  - icon: github
-    icon_pack: fab
-    link: https://github.com/gcushen
-  - icon: linkedin
-    icon_pack: fab
-    link: https://www.linkedin.com/
-  # Link to a PDF of your resume/CV.
-  # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
-  # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
+- icon: envelope
+  icon_pack: fas
+  link: 'mailto:bvasudev@usc.edu'
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/bhavya-vasudeva-93a99a14a
+- icon: google-scholar 
+  icon_pack: ai
+  link: https://scholar.google.co.uk/citations?user=ZCSsIokAAAAJ
+- icon: github
+  icon_pack: fab
+  link: https://github.com/estija
+
+# Link to a PDF of your resume/CV.
+# To use: copy your resume to `static/media/resume.pdf`, enable `ai` icons in `params.toml`, 
+# and uncomment the lines below.
+- icon: cv
+  icon_pack: ai
+  link: static/uploads/bhavyaresume.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a CS PhD student at the University of Southern California, advised by Prof. [Vatsal Sharan](https://vatsalsharan.github.io/). I am broadly interested in the theoretical aspects of deep learning, particularly in understanding inductive biases of various ML models, their optimization and generalization dynamics, as well as improving robustness to distributional shifts.
+
+Previously, I was a (remote) Visiting Researcher at CVPR Unit, ISI Kolkata, advised by Prof. [Umapada Pal](https://www.isical.ac.in/~umapada/) and Prof. [Saumik Bhattacharya](https://saumikb.github.io/), working on deep metric learning. 
+
+Before that, I graduated from [IIT Roorkee](https://www.iitr.ac.in/) with a bachelor's in Electronics and Communication Engineering. For my joint bachelor thesis, I worked on generative adversarial network-based methods for compressive sensing MRI reconstruction, under the guidance of Prof. [Saumik Bhattacharya](https://saumikb.github.io/) and Prof. [PM Pradhan](https://www.iitr.ac.in/~ECE/Pyari_Mohan_Pradhan). I also interned at Northwestern University as an SN Bose Scholar in the summer of 2019. 
 {style="text-align: justify;"}
