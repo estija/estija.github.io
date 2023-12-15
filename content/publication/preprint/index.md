@@ -6,7 +6,7 @@ title: "Mitigating Simplicity Bias in Deep Learning for Improved OOD Generalizat
 # and it will be replaced with their full name and linked to their profile.
 authors:
 - Bhavya Vasudeva
-- Kemron Shahabi
+- Kameron Shahabi
 - Vatsal Sharan
 
 # Author notes (optional)
