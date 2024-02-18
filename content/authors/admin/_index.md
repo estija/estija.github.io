@@ -91,7 +91,7 @@ social:
 # - icon: envelope
 #   icon_pack: fas
 #   link: 'mailto:bvasudev@usc.edu'
-  - icon: github
+- icon: github
   icon_pack: fab
   link: https://github.com/estija
 - icon: google-scholar 
@@ -106,7 +106,7 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/bhavya-vasudeva-93a99a14a
-  
+
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
