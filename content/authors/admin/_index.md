@@ -106,12 +106,15 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/bhavya-vasudeva-93a99a14a
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/bhavya_vasudeva
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-I am a CS PhD student at the University of Southern California, advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io/) of [USC CS Theory Group](https://viterbi-web.usc.edu/~cstheory/). I am broadly interested in the theoretical aspects of deep learning, particularly in understanding inductive biases of various ML models, their optimization and generalization dynamics, as well as improving robustness to distributional shifts.
+I am a CS PhD candidate at the University of Southern California, advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io/) of [USC CS Theory Group](https://viterbi-web.usc.edu/~cstheory/). I am broadly interested in the theoretical aspects of deep learning, particularly in understanding inductive biases of various ML models, their optimization and generalization dynamics, as well as improving robustness to distributional shifts.
 
 Previously, I was a (remote) Visiting Researcher at CVPR Unit, ISI Kolkata, advised by [Prof. Umapada Pal](https://www.isical.ac.in/~umapada/) and [Prof. Saumik Bhattacharya](https://saumikb.github.io/), working on deep metric learning. 
 

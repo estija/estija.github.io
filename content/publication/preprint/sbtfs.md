@@ -17,7 +17,7 @@ author_notes:
 - Equal Contribution
 - Equal Contribution
 
-date: "2024-02-17"
+date: "2024-03-11"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -30,7 +30,7 @@ publishDate: "2024-02-17"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: Working Paper
+publication: BGPT Workshop@ICLR'24; Under review
 publication_short: 
 
 abstract: Transformers achieve state-of-the-art accuracy and robustness results across many tasks, but an understanding of the inductive biases that they have and how those biases are different from other neural network architectures remains elusive. Various neural network architectures such as fully connected networks have been found to have a simplicity bias towards simple functions of the data; one version of this simplicity bias is a spectral bias to simple functions in the Fourier space. In this work, we identify the notion of sensitivity of the model to random changes in the input as a notion of simplicity bias which provides a unified metric to explain the simplicity and spectral bias of Transformers across different data modalities. We show that Transformers have lower sensitivity than alternative architectures, such as LSTMs, MLPs and CNNs across both vision and language tasks. We also show that sensitivity bias correlates with improved robustness; furthermore, it can also be used as an efficient intervention to further improve the robustness of Transformers.
@@ -48,7 +48,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://arxiv.org/pdf/2403.06925.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
