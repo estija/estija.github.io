@@ -114,11 +114,15 @@ social:
 highlight_name: true
 ---
 
-I am a CS PhD candidate at the University of Southern California, advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io/) of [USC CS Theory Group](https://viterbi-web.usc.edu/~cstheory/). I am broadly interested in the theoretical aspects of deep learning, particularly in understanding inductive biases of various ML models, their optimization and generalization dynamics, as well as improving robustness to distributional shifts.
+I am a CS PhD candidate at the University of Southern California, advised by [Prof. Vatsal Sharan](https://vatsalsharan.github.io/) of [USC CS Theory Group](https://viterbi-web.usc.edu/~cstheory/). I have been fortunate to work closely with [Prof. Christos Thrampoulidis](https://sites.google.com/view/cthrampo) and [Prof. Mahdi Soltanolkotabi](https://viterbi-web.usc.edu/~soltanol/). 
 
-Previously, I was a (remote) Visiting Researcher at CVPR Unit, ISI Kolkata, advised by [Prof. Umapada Pal](https://www.isical.ac.in/~umapada/) and [Prof. Saumik Bhattacharya](https://saumikb.github.io/), working on deep metric learning. 
+I am broadly interested in making foundational advances towards improving our understanding of deep learning and AI systems to make them more reliable and trustworthy. I use both theoretical tools and empirical insights to analyze inductive biases of various ML models, their optimization and generalization dynamics, as well as improving robustness to distributional shifts.
 
-Before that, I graduated from [IIT Roorkee](https://www.iitr.ac.in/) with a bachelor's in ECE. For my undergraduate thesis, I worked on generative adversarial network-based methods for compressive sensing MRI reconstruction, under the guidance of [Prof. Saumik Bhattacharya](https://saumikb.github.io/) and [Prof. PM Pradhan](http://ece.iitr.ac.in/pm_pradhan). I also interned at Northwestern University as an SN Bose Scholar in the summer of 2019. 
+During Summer 2024, I am lucky to intern at PHI Lab, NTT Research in [Hidenori Tanaka](https://sites.google.com/view/htanaka/home)'s group co-affiliated with the [Center of Brain Science (CBS)](https://cbs.fas.harvard.edu/research/theory/) at Harvard University. We are working on developing a faithful abstraction of how language models resolve underspecification. 
+
+Before starting my PhD, I was a (remote) Visiting Researcher at CVPR Unit, ISI Kolkata, advised by [Prof. Umapada Pal](https://www.isical.ac.in/~umapada/) and [Prof. Saumik Bhattacharya](https://saumikb.github.io/), working on deep metric learning. 
+
+Prior to that, I graduated from [IIT Roorkee](https://www.iitr.ac.in/) with a bachelor's in ECE. For my undergraduate thesis, I worked on generative adversarial network-based methods for compressive sensing MRI reconstruction, under the guidance of [Prof. Saumik Bhattacharya](https://saumikb.github.io/) and [Prof. PM Pradhan](http://ece.iitr.ac.in/pm_pradhan). I also interned at Northwestern University as an SN Bose Scholar in the summer of 2019. 
 
 **Email:** bvasudev \[at\] usc \[dot\] edu
 {style="text-align: justify;"}
