@@ -48,7 +48,7 @@ featured: true
 url_pdf: 'https://arxiv.org/pdf/2402.05738.pdf'
 url_code: ''
 url_dataset: ''
-url_poster: ''
+url_poster: 'https://drive.google.com/file/d/15F2mCDRmyErZi4oREsbArKk3_pjASmZ6/view?usp=share_link'
 url_project: ''
 url_slides: ''
 url_source: ''

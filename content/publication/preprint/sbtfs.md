@@ -51,7 +51,7 @@ featured: true
 url_pdf: 'https://arxiv.org/pdf/2403.06925.pdf'
 url_code: ''
 url_dataset: ''
-url_poster: ''
+url_poster: 'https://drive.google.com/file/d/1i34391t5d6KjuwlOLNJ_R8p0uajSIfxs/view?usp=share_link'
 url_project: ''
 url_slides: ''
 url_source: ''

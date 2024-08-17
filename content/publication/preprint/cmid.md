@@ -25,7 +25,7 @@ publishDate: "2023-12-14"
 publication_types: ["3"]
 
 # Publication name and optional abbreviated publication name.
-publication: SCIS Workshop@ICML'23; Under review
+publication: SCIS Workshop@ICML'23; TMLR'24
 publication_short: 
 
 abstract: Neural networks (NNs) are known to exhibit simplicity bias where they tend to prefer learning 'simple' features over more 'complex' ones, even when the latter may be more informative. Simplicity bias can lead to the model making biased predictions which have poor out-of-distribution (OOD) generalization. To address this, we propose a framework that encourages the model to use a more diverse set of features to make predictions. We first train a simple model, and then regularize the conditional mutual information with respect to it to obtain the final model. We demonstrate the effectiveness of this framework in various problem settings and real-world applications, showing that it effectively addresses simplicity bias and leads to more features being used, enhances OOD generalization, and improves subgroup robustness and fairness. We complement these results with theoretical analyses of the effect of the regularization and its OOD generalization properties.
