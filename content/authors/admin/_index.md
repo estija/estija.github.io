@@ -120,7 +120,7 @@ My research focuses on making foundational advances to improve our understanding
 
 I graduated from [IIT Roorkee](https://www.iitr.ac.in/) with a bachelor's in ECE, where I worked on generative adversarial network-based methods for compressive sensing MRI reconstruction. I also interned at Northwestern University as an SN Bose Scholar in the summer of 2019. 
 
-In my free time, I enjoy being outdoors, going on hikes and long walks, swimming and reading.
+In my free time, I enjoy being outdoors, hiking, swimming and reading.
 
 **Email:** bvasudev \[at\] usc \[dot\] edu
 {style="text-align: justify;"}
