@@ -40,3 +40,22 @@
     "vendor/font-awesome/brands",
     "vendor/magnific-popup/magnific-popup"
 ;
+
+/* Adjust spacing for publication items */
+.publication-item {
+  margin-bottom: 10px; // overall bottom spacing for each item
+}
+
+.publication-item h3.publication-title {
+  margin-bottom: 5px; // space below the paper title
+}
+
+.publication-item .publication-authors,
+.publication-item .publication-venue {
+  margin: 0; // remove extra top/bottom margins
+}
+
+/* Change link color for all URLs (or scope to publication items if desired) */
+a {
+  color: #404bc6; // change this to your desired color
+}
