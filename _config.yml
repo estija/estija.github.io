@@ -25,9 +25,9 @@ author:
   avatar           : "avatar.jpg"
   name             : "Bhavya Vasudeva"
   pronouns         : # example: "she/her"  
-  bio              : "CS PhD Student"
-  location         : "Los Angeles, CA"
-  employer         : "University of Southern California"
+  bio              : "CS PhD Student at USC"
+  location         : # "Los Angeles, CA"
+  employer         : # "University of Southern California"
   uri              : # URL
   email            : "bvasudev@usc.edu" 
 
@@ -77,12 +77,10 @@ author:
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
-  books:
-    title: 'Books'
-  manuscripts:
-    title: 'Journal Articles'    
-  conferences:
-    title: 'Conference Papers'
+  preprints:
+    title: 'Preprints'
+  accepted:
+    title: 'Publications'    
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
