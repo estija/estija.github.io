@@ -14,9 +14,9 @@ author_profile: true
 <!-- Loop through all publications in reverse order -->
 {% for post in site.publications reversed %}
   <div class="publication-item">
-    <!-- Paper title with link to the publication page -->
+    <!-- Paper title with link to the permalink -->
     <h3 class="publication-title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ post.permalink }}">{{ post.title }}</a>
     </h3>
     
     <!-- Author list -->
@@ -31,5 +31,18 @@ author_profile: true
       <p class="publication-venue">{{ post.venue }}</p>
     {% endif %}
 
+    <!-- Links to arxiv and poster -->
+    {% if post.paperurl or post.posterurl %}
+      <p class="publication-links">
+        {% if post.paperurl %}
+          <a href="{{ post.paperurl }}">arxiv</a>
+        {% endif %}
+        {% if post.posterurl %}
+          {% if post.paperurl %} | {% endif %}
+          <a href="{{ post.posterurl }}">poster</a>
+        {% endif %}
+      </p>
+    {% endif %}
   </div>
 {% endfor %}
+
