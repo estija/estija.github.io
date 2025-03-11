@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">See <a href="{{site.author.googlescholar}}">my Google Scholar profile</a> for a complete list of papers. (<sup>*</sup> denotes equal contribution.)</div>
+  <div class="wordwrap">Please see <a href="{{site.author.googlescholar}}">my Google Scholar</a> for a complete list of papers. (<sup>*</sup> denotes equal contribution.)</div>
 {% endif %}
 
 {% include base_path %}
@@ -30,5 +30,6 @@ author_profile: true
     {% if post.venue %}
       <p class="publication-venue">{{ post.venue }}</p>
     {% endif %}
+
   </div>
 {% endfor %}
