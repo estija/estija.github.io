@@ -110,8 +110,10 @@ layout: default
 
   .va-footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--va-rule);font-size:13px;color:var(--va-sub)}
 
+  .va-home ::-moz-selection{background:#cfe0ff;color:inherit !important}
   .va-home ::selection{background:#cfe0ff;color:inherit !important}
-  .va-home a:focus-visible{outline:2px solid var(--va-link);outline-offset:2px}
+  .va-home a:focus,
+  .va-home a:focus-visible{outline:2px solid var(--va-link) !important;outline-offset:2px}
 
   @media (max-width:760px){
     .va-layout{flex-direction:column}
