@@ -191,7 +191,7 @@ layout: default
                   <p class="va-title"><a href="{{ pub.permalink }}">{{ pub.title }}</a></p>
                   {% endif %}
                   <p class="va-authors">{{ pub.authors | replace: "Bhavya Vasudeva", "<strong>Bhavya Vasudeva</strong>" }}</p>
-                  <p class="va-venue">{{ pub.venue }}</p>
+                  {% if pub.venue %}<p class="va-venue">{{ pub.venue }}</p>{% endif %}
                   {% if pub.paperurl or pub.posterurl %}
                   <p class="va-plinks">
                     {% if pub.paperurl %}<a href="{{ pub.paperurl }}">arxiv</a>{% endif %}
