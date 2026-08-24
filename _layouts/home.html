@@ -1,0 +1,243 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% if page.author and site.data.authors[page.author] %}
+  {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
+{% endif %}
+
+<style>
+  .masthead{display:none}
+
+  .va-home{
+    --va-bg:#ffffff;
+    --va-ink:#1c1c1c;
+    --va-sub:#5a5a5a;
+    --va-link:#3a5a8c;
+    --va-link-visited:#5a4a8c;
+    --va-rule:#e2e2e2;
+    background:var(--va-bg);
+    color:var(--va-ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    margin:0 -1000px;
+    padding:0 1000px;
+  }
+  html{scroll-padding-top:70px}
+  @media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
+  .va-home a{color:var(--va-link);text-decoration:none;border-bottom:1px solid rgba(58,90,140,.35)}
+  .va-home a:hover{border-bottom-color:var(--va-link)}
+  .va-home a:visited{color:var(--va-link-visited)}
+  .va-home img{max-width:100%;display:block}
+  .va-home svg{display:block}
+
+  .va-layout{
+    max-width:960px;margin:0 auto;padding:0 24px 80px;
+    display:flex;gap:44px;align-items:flex-start;
+  }
+
+  /* ---------------- Sidebar ---------------- */
+  .va-sidebar{width:220px;flex:none;position:sticky;top:40px;padding-top:56px}
+  .va-sidebar-photo{width:170px;height:170px;border-radius:3px;overflow:hidden;margin-bottom:18px}
+  .va-sidebar-photo img{width:100%;height:100%;object-fit:cover}
+  .va-sidebar h1{font-size:21px;font-weight:700;margin:0 0 6px;letter-spacing:-.01em}
+  .va-sidebar .va-role{font-size:13.5px;color:var(--va-sub);line-height:1.5;margin:0 0 20px}
+
+  .va-icon-links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+  .va-icon-links li{display:flex;align-items:center;gap:9px}
+  .va-icon-links a{display:flex;align-items:center;gap:9px;color:var(--va-sub);border-bottom:none;font-size:13.5px}
+  .va-icon-links a:hover{color:var(--va-link)}
+  .va-icon-links svg{width:16px;height:16px;flex:none}
+  .va-icon-links .va-email-inline{display:flex;align-items:center;gap:9px;color:var(--va-sub);font-size:13.5px}
+
+  /* ---------------- Main column ---------------- */
+  .va-main{flex:1;min-width:0;max-width:660px}
+
+  .va-tabnav{
+    position:sticky;top:0;background:var(--va-bg);
+    padding:20px 0 12px;margin-bottom:8px;
+    border-bottom:1px solid var(--va-rule);
+    display:flex;gap:26px;z-index:5;
+  }
+  .va-tabnav a{
+    font-size:14px;font-weight:600;color:var(--va-sub);border-bottom:2px solid transparent;
+    padding-bottom:10px;letter-spacing:.01em;
+  }
+  .va-tabnav a:hover{color:var(--va-ink)}
+  .va-tabnav a.active{color:var(--va-ink);border-bottom-color:var(--va-link)}
+
+  .va-main section{scroll-margin-top:66px;padding-top:34px}
+  .va-main section:first-of-type{padding-top:22px}
+
+  .va-bio p{margin:0 0 14px;font-size:15.5px}
+
+  .va-main h2{
+    font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;
+    color:var(--va-ink);margin:0 0 16px;
+  }
+
+  .va-news{list-style:none;margin:0;padding:0;font-size:15px}
+  .va-news li{display:grid;grid-template-columns:56px 1fr;gap:14px;padding:6px 0}
+  .va-news .va-date{color:var(--va-sub);font-size:13.5px;white-space:nowrap;padding-top:1px}
+
+  .va-year-group{margin-bottom:6px}
+  .va-year-head{
+    font-size:13px;font-weight:700;color:var(--va-sub);
+    margin:26px 0 10px;padding-bottom:6px;border-bottom:1px solid var(--va-rule);
+    font-variant-numeric:tabular-nums;
+  }
+  .va-year-group:first-child .va-year-head{margin-top:0}
+
+  .va-pub-list{list-style:none;margin:0;padding:0}
+  .va-pub{display:flex;gap:16px;padding:14px 0}
+  .va-pub-thumb{
+    width:88px;height:66px;flex:none;background:#f0f1f3;border:1px solid var(--va-rule);
+    border-radius:2px;overflow:hidden;
+  }
+  .va-pub-thumb img{width:100%;height:100%;object-fit:cover}
+  .va-pub-body .va-title{font-size:15.5px;font-weight:600;margin:0 0 4px;line-height:1.4}
+  .va-pub-body .va-authors{font-size:13.5px;color:var(--va-sub);margin:0 0 3px;line-height:1.45}
+  .va-pub-body .va-venue{font-size:13px;color:var(--va-sub);font-style:italic}
+  .va-pub-body .va-plinks{font-size:13px;margin-top:5px}
+  .va-pub-body .va-plinks a{margin-right:10px}
+
+  .va-footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--va-rule);font-size:13px;color:var(--va-sub)}
+
+  .va-home ::selection{background:#cfe0ff}
+  .va-home a:focus-visible{outline:2px solid var(--va-link);outline-offset:2px}
+
+  @media (max-width:760px){
+    .va-layout{flex-direction:column}
+    .va-sidebar{position:static;width:100%;padding-top:24px;display:flex;gap:20px;align-items:center}
+    .va-sidebar-photo{width:96px;height:96px;margin-bottom:0}
+    .va-sidebar h1{font-size:19px}
+    .va-icon-links{flex-direction:row;flex-wrap:wrap;gap:14px}
+    .va-main{max-width:100%}
+  }
+</style>
+
+<div class="va-home">
+  <div class="va-layout">
+
+    <aside class="va-sidebar">
+      <div class="va-sidebar-photo">
+        <img src="{{ author.avatar | prepend: '/images/' | prepend: base_path }}" alt="Portrait of {{ author.name }}">
+      </div>
+      <div>
+        <h1>{{ author.name }}</h1>
+        <p class="va-role">{% for line in page.role_lines %}{{ line }}{% unless forloop.last %}<br>{% endunless %}{% endfor %}</p>
+        <ul class="va-icon-links">
+          <li><span class="va-email-inline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>{{ author.email_display }}</span></li>
+          <li><a href="{{ base_path }}/files/bhavyaresume.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M14 2v5h5"/></svg>CV</a></li>
+          {% if author.googlescholar %}<li><a href="{{ author.googlescholar }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5 1 7.6l11 6.1 9-5V17h2V7.6L12 1.5zM3.5 13.9v4.3c0 1.87 3.8 4.3 8.5 4.3s8.5-2.43 8.5-4.3v-4.3l-8.5 4.72-8.5-4.72z"/></svg>Google Scholar</a></li>{% endif %}
+          {% if author.github %}<li><a href="https://github.com/{{ author.github }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 2.87-.39c.97 0 1.95.13 2.87.39 2.18-1.47 3.14-1.16 3.14-1.16.63 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.07.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>GitHub</a></li>{% endif %}
+          {% if author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>LinkedIn</a></li>{% endif %}
+          {% if author.twitter %}<li><a href="https://twitter.com/{{ author.twitter }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.83-5.97 6.83H1.65l7.73-8.84L1.23 2.25h6.83l4.72 6.24 5.46-6.24zm-1.16 17.52h1.83L7.02 4.13H5.06l12.02 15.64z"/></svg>Twitter / X</a></li>{% endif %}
+        </ul>
+      </div>
+    </aside>
+
+    <main class="va-main">
+      <nav class="va-tabnav" id="va-tabnav">
+        <a href="#about" class="active" data-target="about">About</a>
+        <a href="#news" data-target="news">News</a>
+        <a href="#publications" data-target="publications">Publications</a>
+      </nav>
+
+      <section id="about">
+        <div class="va-bio">
+          {{ content }}
+        </div>
+      </section>
+
+      <section id="news">
+        <h2>News</h2>
+        <ul class="va-news">
+          {% for item in site.data.news %}
+          <li><span class="va-date">{{ item.date }}</span><span>{{ item.text }}</span></li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section id="publications">
+        <h2>Publications</h2>
+        {% assign year_order = "Preprints,2026,2025,2024" | split: "," %}
+        {% for y in year_order %}
+          {% assign pubs = site.publications | where: "year", y | sort: "date" | reverse %}
+          {% if pubs.size > 0 %}
+          <div class="va-year-group">
+            <p class="va-year-head">{{ y }}</p>
+            <ul class="va-pub-list">
+              {% for pub in pubs %}
+              <li class="va-pub">
+                {% if pub.thumbnail %}
+                <div class="va-pub-thumb"><img src="{{ pub.thumbnail | prepend: '/images/' | prepend: base_path }}" alt=""></div>
+                {% endif %}
+                <div class="va-pub-body">
+                  <p class="va-title"><a href="{{ pub.permalink }}">{{ pub.title }}</a></p>
+                  <p class="va-authors">{{ pub.authors | replace: "Bhavya Vasudeva", "<strong>Bhavya Vasudeva</strong>" }}</p>
+                  <p class="va-venue">{{ pub.venue }}</p>
+                  {% if pub.paperurl or pub.posterurl %}
+                  <p class="va-plinks">
+                    {% if pub.paperurl %}<a href="{{ pub.paperurl }}">paper</a>{% endif %}
+                    {% if pub.posterurl %}<a href="{{ pub.posterurl }}">poster</a>{% endif %}
+                  </p>
+                  {% endif %}
+                </div>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
+        {% endfor %}
+      </section>
+
+      <footer class="va-footer">
+        &copy; {{ author.name }}. Last updated {{ site.time | date: "%Y" }}.
+      </footer>
+    </main>
+  </div>
+</div>
+
+<script>
+(function(){
+  var links = Array.prototype.slice.call(document.querySelectorAll('.va-tabnav a'));
+  var sections = links.map(function(l){ return document.getElementById(l.dataset.target); });
+
+  links.forEach(function(link){
+    link.addEventListener('click', function(e){
+      e.preventDefault();
+      var target = document.getElementById(link.dataset.target);
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+      history.replaceState(null, '', '#' + link.dataset.target);
+    });
+  });
+
+  var tabnav = document.getElementById('va-tabnav');
+  var ticking = false;
+
+  function setActive(){
+    var offset = tabnav.getBoundingClientRect().bottom + 1;
+    var current = sections[0];
+    for (var i = 0; i < sections.length; i++){
+      if (sections[i] && sections[i].getBoundingClientRect().top <= offset){
+        current = sections[i];
+      }
+    }
+    var atBottom = (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 2;
+    if (atBottom) current = sections[sections.length - 1];
+    links.forEach(function(l){ l.classList.toggle('active', l.dataset.target === current.id); });
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function(){
+    if (!ticking){ window.requestAnimationFrame(setActive); ticking = true; }
+  }, {passive:true});
+  window.addEventListener('resize', setActive);
+  setActive();
+})();
+</script>

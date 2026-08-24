@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Bhavya Vasudeva"
 title_separator          : "-"
 name                     : &name "Bhavya Vasudeva"
-description              : &description "PhD Student at USC"
+description              : &description "Postdoctoral Scholar at UC San Diego"
 url                      : https://estija.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "estija.github.io"
@@ -24,12 +24,13 @@ author:
   # Biographic information
   avatar           : "avatar.jpg"
   name             : "Bhavya Vasudeva"
-  pronouns         : # example: "she/her"  
-  bio              : "CS PhD Student at USC"
+  pronouns         : # example: "she/her"
+  bio              : "Postdoctoral Scholar at UC San Diego"
   location         : # "Los Angeles, CA"
   employer         : # "University of Southern California"
   uri              : # URL
-  email            : #"bvasudev@usc.edu" 
+  email            : #"bvasudev@usc.edu"
+  email_display    : "bvasudev [at] ucsd [dot] edu"
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
