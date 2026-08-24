@@ -15,8 +15,8 @@ layout: default
     --va-bg:#ffffff;
     --va-ink:#1c1c1c;
     --va-sub:#5a5a5a;
-    --va-link:#3a5a8c;
-    --va-link-visited:#5a4a8c;
+    --va-link:#2451c9;
+    --va-link-visited:#2451c9;
     --va-rule:#e2e2e2;
     background:var(--va-bg);
     color:var(--va-ink);
@@ -29,9 +29,11 @@ layout: default
   }
   html{scroll-padding-top:70px}
   @media (prefers-reduced-motion:no-preference){ html{scroll-behavior:smooth} }
-  .va-home a{color:var(--va-link);text-decoration:none;border-bottom:1px solid rgba(58,90,140,.35)}
-  .va-home a:hover{border-bottom-color:var(--va-link)}
-  .va-home a:visited{color:var(--va-link-visited)}
+  .va-home a{color:var(--va-link) !important;text-decoration:none;border-bottom:1px solid rgba(36,81,201,.35)}
+  .va-home a:hover,
+  .va-home a:focus,
+  .va-home a:active{color:var(--va-link) !important;border-bottom-color:var(--va-link)}
+  .va-home a:visited{color:var(--va-link-visited) !important}
   .va-home img{max-width:100%;display:block}
   .va-home svg{display:block}
 
@@ -49,8 +51,9 @@ layout: default
 
   .va-icon-links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
   .va-icon-links li{display:flex;align-items:center;gap:9px}
-  .va-icon-links a{display:flex;align-items:center;gap:9px;color:var(--va-sub);border-bottom:none;font-size:13.5px}
-  .va-icon-links a:hover{color:var(--va-link)}
+  .va-icon-links a{display:flex;align-items:center;gap:9px;color:var(--va-sub) !important;border-bottom:none;font-size:13.5px}
+  .va-icon-links a:hover,
+  .va-icon-links a:focus{color:var(--va-link) !important}
   .va-icon-links svg{width:16px;height:16px;flex:none}
   .va-icon-links .va-email-inline{display:flex;align-items:center;gap:9px;color:var(--va-sub);font-size:13.5px}
 
@@ -64,11 +67,11 @@ layout: default
     display:flex;gap:26px;z-index:5;
   }
   .va-tabnav a{
-    font-size:14px;font-weight:600;color:var(--va-sub);border-bottom:2px solid transparent;
+    font-size:14px;font-weight:600;color:var(--va-sub) !important;border-bottom:2px solid transparent;
     padding-bottom:10px;letter-spacing:.01em;
   }
-  .va-tabnav a:hover{color:var(--va-ink)}
-  .va-tabnav a.active{color:var(--va-ink);border-bottom-color:var(--va-link)}
+  .va-tabnav a:hover{color:var(--va-ink) !important}
+  .va-tabnav a.active{color:var(--va-ink) !important;border-bottom-color:var(--va-link)}
 
   .va-main section{scroll-margin-top:66px;padding-top:34px}
   .va-main section:first-of-type{padding-top:22px}
@@ -81,7 +84,7 @@ layout: default
   }
 
   .va-news{list-style:none;margin:0;padding:0;font-size:15px}
-  .va-news li{display:grid;grid-template-columns:56px 1fr;gap:14px;padding:6px 0}
+  .va-news li{display:grid;grid-template-columns:88px 1fr;gap:14px;padding:6px 0}
   .va-news .va-date{color:var(--va-sub);font-size:13.5px;white-space:nowrap;padding-top:1px}
 
   .va-year-group{margin-bottom:6px}
@@ -93,16 +96,16 @@ layout: default
   .va-year-group:first-child .va-year-head{margin-top:0}
 
   .va-pub-list{list-style:none;margin:0;padding:0}
-  .va-pub{display:flex;gap:16px;padding:14px 0}
+  .va-pub{display:flex;gap:16px;padding:7px 0}
   .va-pub-thumb{
     width:88px;height:66px;flex:none;background:#f0f1f3;border:1px solid var(--va-rule);
     border-radius:2px;overflow:hidden;
   }
   .va-pub-thumb img{width:100%;height:100%;object-fit:cover}
-  .va-pub-body .va-title{font-size:15.5px;font-weight:600;margin:0 0 4px;line-height:1.4}
-  .va-pub-body .va-authors{font-size:13.5px;color:var(--va-sub);margin:0 0 3px;line-height:1.45}
-  .va-pub-body .va-venue{font-size:13px;color:var(--va-sub);font-style:italic}
-  .va-pub-body .va-plinks{font-size:13px;margin-top:5px}
+  .va-pub-body .va-title{font-size:15.5px;font-weight:600;margin:0 0 3px;line-height:1.4}
+  .va-pub-body .va-authors{font-size:13.5px;color:var(--va-sub);margin:0 0 2px;line-height:1.4}
+  .va-pub-body .va-venue{font-size:13px;color:#3d3d3d;font-style:normal}
+  .va-pub-body .va-plinks{font-size:13px;margin-top:3px}
   .va-pub-body .va-plinks a{margin-right:10px}
 
   .va-footer{margin-top:48px;padding-top:18px;border-top:1px solid var(--va-rule);font-size:13px;color:var(--va-sub)}
