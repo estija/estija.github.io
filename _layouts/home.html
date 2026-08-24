@@ -44,7 +44,7 @@ layout: default
   }
 
   /* ---------------- Sidebar ---------------- */
-  .va-sidebar{width:220px;flex:none;position:sticky;top:16px;padding-top:16px}
+  .va-sidebar{width:220px;flex:none;position:sticky;top:16px;padding-top:32px}
   .va-sidebar-photo{width:170px;height:170px;border-radius:3px;overflow:hidden;margin-bottom:18px}
   .va-sidebar-photo img{width:100%;height:100%;object-fit:cover}
   .va-sidebar h1{font-size:21px;font-weight:700;margin:0 0 6px;letter-spacing:-.01em}
@@ -143,7 +143,6 @@ layout: default
           <li><span class="va-email-inline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="4.5" width="20" height="15" rx="2"/><path d="m3 6 9 7 9-7"/></svg>{{ author.email_display }}</span></li>
           <li><a href="{{ base_path }}/files/bhavyaresume.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M14 2v5h5"/></svg>CV</a></li>
           {% if author.googlescholar %}<li><a href="{{ author.googlescholar }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 1.5 1 7.6l11 6.1 9-5V17h2V7.6L12 1.5zM3.5 13.9v4.3c0 1.87 3.8 4.3 8.5 4.3s8.5-2.43 8.5-4.3v-4.3l-8.5 4.72-8.5-4.72z"/></svg>Google Scholar</a></li>{% endif %}
-          {% if author.github %}<li><a href="https://github.com/{{ author.github }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.98 5.24.98 11.52c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.1-3.17.69-3.84-1.35-3.84-1.35-.52-1.32-1.27-1.67-1.27-1.67-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.34.95.1-.74.4-1.25.72-1.54-2.53-.29-5.19-1.27-5.19-5.63 0-1.24.44-2.26 1.17-3.05-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.16a10.9 10.9 0 0 1 2.87-.39c.97 0 1.95.13 2.87.39 2.18-1.47 3.14-1.16 3.14-1.16.63 1.58.23 2.75.11 3.04.73.79 1.17 1.81 1.17 3.05 0 4.37-2.67 5.33-5.21 5.62.41.36.77 1.07.77 2.15 0 1.56-.01 2.81-.01 3.19 0 .3.2.66.79.55A10.53 10.53 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>GitHub</a></li>{% endif %}
           {% if author.linkedin %}<li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>LinkedIn</a></li>{% endif %}
           {% if author.twitter %}<li><a href="https://twitter.com/{{ author.twitter }}"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.66l-5.22-6.83-5.97 6.83H1.65l7.73-8.84L1.23 2.25h6.83l4.72 6.24 5.46-6.24zm-1.16 17.52h1.83L7.02 4.13H5.06l12.02 15.64z"/></svg>Twitter / X</a></li>{% endif %}
         </ul>
