@@ -10,7 +10,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral scholar at the Halıcıoğlu Data Science Institute, UC San Diego, working with [Dmitriy Drusvyatskiy](https://sites.google.com/view/dmitriy-drusvyatskiy) and [Mikhail Belkin](https://misha.belkin-wang.org/).
+I am a postdoctoral scholar at the Halıcıoğlu Data Science Institute, UC San Diego, working with [Misha Belkin](https://misha.belkin-wang.org/) and [Dima Drusvyatskiy](https://sites.google.com/view/dmitriy-drusvyatskiy).
 
 My research focuses on making foundational advances to improve our understanding of deep learning-based systems and making them more reliable and trustworthy. I use both theoretical tools and empirical insights to analyze the optimization and generalization dynamics of ML models, improve their robustness to distributional shifts, and, generally, develop faithful abstractions of ML model behavior.
 
