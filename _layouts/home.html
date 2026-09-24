@@ -186,7 +186,7 @@ layout: default
                 <div class="va-pub-thumb"><img src="{{ pub.thumbnail | prepend: '/images/' | prepend: base_path }}" alt=""></div>
                 {% endif %}
                 <div class="va-pub-body">
-                  {% if y == "Preprints" %}
+                  {% if y == "Preprints" or pub.nolink %}
                   <p class="va-title va-notlink">{{ pub.title }}</p>
                   {% else %}
                   <p class="va-title"><a href="{{ pub.permalink }}">{{ pub.title }}</a></p>
